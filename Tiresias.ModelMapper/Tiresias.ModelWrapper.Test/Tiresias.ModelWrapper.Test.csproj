@@ -4,12 +4,12 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{187CDFE7-5D0F-4E62-B30F-5829CC3FA47B}</ProjectGuid>
+    <ProjectGuid>{A7DC9B7A-407D-4AB6-A841-7456C079BA0D}</ProjectGuid>
     <ProjectTypeGuids>{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Tiresias.ModelMapper</RootNamespace>
-    <AssemblyName>Tiresias.ModelMapper</AssemblyName>
+    <RootNamespace>Tiresias.ModelWrapper.Test</RootNamespace>
+    <AssemblyName>Tiresias.ModelWrapper.Test</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <LangVersion>7.1</LangVersion>
@@ -38,15 +38,19 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
+    <Reference Include="nunit.framework, Version=3.5.0.0, Culture=neutral, PublicKeyToken=2638cd05610744eb">
+      <HintPath>..\packages\NUnit.3.5.0\lib\net45\nunit.framework.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DefaultMapper.cs" />
-    <Compile Include="DefaultMapperConfig.cs" />
-    <Compile Include="IMapper.cs" />
-    <Compile Include="IMapperConfig.cs" />
-    <Compile Include="InvalidMappingException.cs" />
-    <Compile Include="Mapper.cs" />
+    <Compile Include="Tests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Tiresias.ModelMapper\Tiresias.ModelMapper.csproj">
+      <Project>{187cdfe7-5d0f-4e62-b30f-5829cc3fa47b}</Project>
+      <Name>Tiresias.ModelMapper</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

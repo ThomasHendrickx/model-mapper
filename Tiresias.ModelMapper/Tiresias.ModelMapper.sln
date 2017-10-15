@@ -5,6 +5,8 @@ VisualStudioVersion = 12.0.0.0
 MinimumVisualStudioVersion = 10.0.0.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tiresias.ModelMapper", "Tiresias.ModelMapper/Tiresias.ModelMapper.csproj", "{187CDFE7-5D0F-4E62-B30F-5829CC3FA47B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tiresias.ModelWrapper.Test", "Tiresias.ModelWrapper.Test\Tiresias.ModelWrapper.Test.csproj", "{A7DC9B7A-407D-4AB6-A841-7456C079BA0D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{187CDFE7-5D0F-4E62-B30F-5829CC3FA47B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{187CDFE7-5D0F-4E62-B30F-5829CC3FA47B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{187CDFE7-5D0F-4E62-B30F-5829CC3FA47B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7DC9B7A-407D-4AB6-A841-7456C079BA0D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7DC9B7A-407D-4AB6-A841-7456C079BA0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7DC9B7A-407D-4AB6-A841-7456C079BA0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7DC9B7A-407D-4AB6-A841-7456C079BA0D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -4,12 +4,22 @@ namespace Tiresias.ModelMapper
 {
     public static class Mapper
     {
-        private static IMapperConfig _config;
+        internal static DefaultMapperConfig Config;
         
         public static void Initialize(Action<IMapperConfig> addConfigurationAction)
         {
-            _config = new DefaultMapperConfig();
-            addConfigurationAction?.Invoke(_config);
+            if (Config == null)
+            {
+                Config = new DefaultMapperConfig();
+            }
+            addConfigurationAction?.Invoke(Config);
         }
+
+        public static TOut Map<TIn, TOut>(TIn input)
+        {
+            return Config.GetMapping<TIn, TOut>(input);
+        }
+        
     }
 }
+ 
